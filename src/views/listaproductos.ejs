@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/menu.css">
+
+    <title>Lista</title>
+    
+    <h1>Menu de Edición</h1>
+
+    <section>
+        <h2>Tragos</h2> 
+        <span>Agregar trago <a href="/nuevo"><i class="fa-solid fa-plus"></i> </a> </span>
+        <% if(products.length > 0) %> 
+        <ul>
+            <% products.forEach(element => { %>
+              <h3> <%= element.nombre %> <span> $<%= element.precio%> </span> </h3>  
+              <li> <%= element.ingredientes %> <a href="/MenuEdicionMolokai/editar/<%= element.id %> "><i class="fa-solid fa-pen-to-square"></i></a> </li> 
+
+            <% }) %>
+        </ul>
+    </section>
+
+</head>
+<body>
+    
+</body>
+</html>

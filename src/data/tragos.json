@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Gin Tonicssss",
+    "ingredientes": "Modificar",
+    "precio": 350
+  },
+  {
+    "id": 2,
+    "nombre": "Gin Tonics",
+    "ingredientes": "caca",
+    "precio": 300
+  },
+  {
+    "id": 3,
+    "nombre": "Gin Tonics",
+    "ingredientes": "caca",
+    "precio": 300
+  },
+  {
+    "id": 4,
+    "nombre": "Gin Tonics",
+    "ingredientes": "caca",
+    "precio": 300
+  },
+  {
+    "id": 5,
+    "nombre": "coca",
+    "ingredientes": "jjjj",
+    "precio": 20
+  },
+  {
+    "id": 6,
+    "nombre": "Jeremías",
+    "ingredientes": "Rombolá",
+    "precio": 2000
+  }
+]

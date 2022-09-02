@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <form action="/actualizar?m=PUT" method="post">
+
+        <input type="hidden" name="id" value="<%= product.id %>">
+      
+        <fieldset>
+          <legend>Nombre del trago</legend>
+          <input type="text" name="nombre" id="nombre" value="<%= product.nombre %>">
+  
+      </fieldset>
+  
+      <fieldset>
+          <legend>Precio del trago</legend>
+          <input type="text" name="precio" id="precio" value="<%= product.precio %>">
+  
+      </fieldset>
+
+      <fieldset>
+        <legend>Detalle del producto</legend>
+        <input type="text" name="ingredientes" id="ingredientes" value="<%= product.ingredientes %>">
+
+    </fieldset>
+      
+        <button type="submit">Guardar</button>
+  
+    </form>
+    
+  
+    <a href="/MenuEdicionMolokai/"> Volver</a>
+</body>
+</html>
