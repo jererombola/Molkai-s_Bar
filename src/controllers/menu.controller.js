@@ -59,7 +59,7 @@ const controller = {
           let todos = all()
           let noEliminados = todos.filter(elemento => elemento.id != req.body.id)
           write(noEliminados)
-          return res.redirect("/productos/")
+          return res.redirect("/MenuEdicionMolokai")
 
       }
 }

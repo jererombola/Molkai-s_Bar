@@ -5,24 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/menu.css">
     <title>Moloka'I</title>
 </head>
 <body>
-    <h1>Moloka'i Bar</h1>
 
-    <section>
-        <h2>Tragos</h2>
-        <% if(products.length > 0) %> 
-        <ul>
-            <% products.forEach(element => { %>
-              <h3> <%= element.nombre  %> <span> $<%= element.precio  %> </span> </h3>
-              <li> <%= element.ingredientes  %> </li>
-
-            <% }) %>
-        </ul>
-    </section>
+    <header>
+        <picture><img src="/img/Logo.png" alt=""></picture>
+    </header>
+   <main>
+       <section>
+           <h2>Tragos</h2>
+    <article>
+           <h3>Clásico</h3>
+           <ul>
+           <% products.filter(element => { if(element.categoria === "clasico" || element.categoria === "Clasico" ){ %>
+             <h4> <%= element.nombre  %> <span> $<%= element.precio  %> </span> </h4>
+             <li> <%= element.ingredientes  %> </li>
+    
+           <% }}) %>
+           </ul>
+    
+    </article>
+    <article>
+       <h3>Sin Alcohol</h3>
+       <ul>
+       <% products.filter(element => { if(element.categoria == "Sin Alcohol" || element.categoria == "sin alcohol" ){ %>
+         <h4> <%= element.nombre  %> <span> $<%= element.precio  %> </span> </h4>
+         <li> <%= element.ingredientes  %> </li>
+    
+       <% }}) %>
+       </ul>
+    
+    </article>
+       </section>
+       
+   </main>
+   <footer>
+     <p>Ubicacion: EL GALPON DE SAAVEDRA - VILELA 3767 </p>
+   </footer>
     
 </body>
 </html>

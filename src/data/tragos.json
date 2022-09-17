@@ -1,9 +1,185 @@
-[
+[ {
+   "id": 1,
+   "nombre": "Gin Tonic",
+   "ingredientes": "(Gin Aconcagua, jugo de frutas, Agua Tónica)",
+   "categoria": "Clasico",
+   "precio": 600
+    },
   {
-    "id": 1,
-    "nombre": "Gin Tonicssss",
-    "ingredientes": "Modificar",
+    "id": 2,
+    "nombre": "Fernet",
+    "ingredientes": "(Fernet Branca, Coca-Cola/Pomelo)",
+    "categoria": "clasico",
     "precio": 350
+  },
+  {
+    "id": 3,
+    "nombre": "Vermouth",
+    "ingredientes": "(Gin Aconcagua, jugo de frutas, Agua Tónica)",
+    "categoria": "clasico",
+    "precio": 600
+    },
+  {
+    "id": 4,
+    "nombre": "Vermouth Tonic",
+    "ingredientes": "(Cinzano Rosso, jugo de limón, Agua tonica)",
+    "categoria": "clasico",
+    "precio": 600
+    },
+  {
+    "id": 5,
+    "nombre": "Cynar",
+    "ingredientes": "(Cynar, jugo de frutas, Agua tonica)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 6,
+    "nombre": "Cynar Julep",
+    "ingredientes": "(Cynar, almíbar, jugo de limón, jugo de pomelo, menta y Agua tonica)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 7,
+    "nombre": "Campari",
+    "ingredientes": "(Campari, jugo de naranja)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 8,
+    "nombre": "Cuba Libre",
+    "ingredientes": "(Ron Bacardi, jugo de limón, Coca-Cola)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 9,
+    "nombre": "Gancia Americano",
+    "ingredientes": "(Gancia, Aperol, soda)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 10,
+    "nombre": "Gancia Batido",
+    "ingredientes": "(Gancia, jugo de limón, almíbar, soda)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 11,
+    "nombre": "Destornillador",
+    "ingredientes": "(Vodka Smirnoff, Jugo de Naranja)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 12,
+    "nombre": "Vodka con Speed",
+    "ingredientes": "(Vodka Smirnoff, Speed)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 13,
+    "nombre": "Caipiroska",
+    "ingredientes": "(Vodka Smirnoff, jugo de limón, almíbar)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 14,
+    "nombre": "Aperol Spritz",
+    "ingredientes": "(Aperol, MUM, soda)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 15,
+    "nombre": "Champagne Mum con speed",
+    "ingredientes": "(MUM, speed)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 16,
+    "nombre": "Jameson IPA",
+    "ingredientes": "(Whisky Jameson IPA)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 17,
+    "nombre": "Negroni",
+    "ingredientes": "(Cinzano Rosso, Gin, Campari)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 18,
+    "nombre": "Roni",
+    "ingredientes": "(Cinzano Rosso, Ron Bacardi, Campari)",
+    "categoria": "Clasico",
+    "precio": 600
+  },
+  {
+    "id": 19,
+    "nombre": "Copa de Vino",
+    "ingredientes": "(Fon de Cave Malbec)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 20,
+    "nombre": "Botella de Vino",
+    "ingredientes": "(Fon de Cave Malbec)",
+    "categoria": "clasico",
+    "precio": 600
+  },
+  {
+    "id": 21,
+    "nombre": "Limonada 1/2 litro",
+    "ingredientes": "(Jugo de limón, menta, jengibre, almíbar)",
+    "categoria": "Sin Alcohol",
+    "precio": 600
+  },
+  {
+    "id": 22,
+    "nombre": "Limonada 1 Litro",
+    "ingredientes": "(Jugo de limón, menta, jengibre, almíbar)",
+    "categoria": "Sin Alcohol",
+    "precio": 600
+  },
+  {
+    "id": 23,
+    "nombre": "Naranjada 1/2 Litro",
+    "ingredientes": "(Jugo de Naranja, almíbar, soda)",
+    "categoria": "Sin Alcohol",
+    "precio": 600
+  },
+  {
+    "id": 24,
+    "nombre": "Naranjada 1 Litro",
+    "ingredientes": "(Jugo de Naranja, almíbar, soda)",
+    "categoria": "Sin Alcohol",
+    "precio": 600
+  },
+  {
+    "id": 25,
+    "nombre": "Pomelada 1/2 Litro",
+    "ingredientes": "(Jugo de Pomelo, almíbar, soda)",
+    "categoria": "Sin Alcohol",
+    "precio": 600
+  },
+  {
+    "id": 26,
+    "nombre": "Pomelada 1 Litro",
+    "ingredientes": "(Jugo de Pomelo, almíbar, soda)",
+    "categoria": "Sin Alcohol",
+    "precio": 600
   }
-  
+    
+
 ]

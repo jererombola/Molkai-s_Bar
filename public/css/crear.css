@@ -30,8 +30,6 @@ h2{
     font-style: italic;
     text-decoration-line: underline;
     font-size: 22px;
-    border-bottom: 2px solid rgb(5, 27, 54);;
-    padding-bottom: 1rem;
 }
 h3{
     margin: 1rem 0 1rem 0;
@@ -50,18 +48,22 @@ h4{
     font-size: 14px;
 }
 li {
-    margin:0 0 3rem 2rem;
+    margin:0 0 3em 2rem;
     font-style: italic;
     font-weight: bold;
     color: rgb(5, 27, 54);
 
 }
 
-article{
-    border-bottom: 2px solid rgb(5, 27, 54);
-}
-footer{
-    font-style: italic;
-    font-weight: bold;
+fieldset{
     font-size: 15px;
+}
+input{
+    width: 80vw;
+    padding: 0.3rem 0 0.3rem 0;
+}
+a{
+    font-size: 14px;
+    color: black;
+    
 }
