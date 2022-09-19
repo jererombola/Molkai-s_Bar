@@ -3,7 +3,7 @@ const methodOverride = require('method-override');
 const server = express();
 const {join} = require('path');
 const{port,start} = require("./modules/server")
-const session = require("express-session")
+const session = require("cookie-session")
 const cookie = require("cookie-parser")
 
 server.listen(port,start());
