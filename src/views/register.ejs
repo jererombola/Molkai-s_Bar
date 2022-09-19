@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Moloka'I</title>
+</head>
+<body>
+
+    <header>
+        <picture><img src="/img/Logo.png" alt=""></picture>
+    </header>
+    <main>
+        <section>
+            <h1> Todavía no estás registrado? Podes hacerlo completando los siguientes datos:</h1>
+            <form action="/register/save" method="post">
+                <label for="nombre"> Nombre </label>
+                <input type="text" name="nombre" required>
+                <label for="apellido"> Apellido </label>
+                <input type="text" name="apellido" required>
+                <label for="email"> Email</label>
+                <input type="text" name="email" >
+                <% if (locals.errores && locals.errores.email) { %>
+                    <p class="feedback">
+                        <%= locals.errores.email.msg %> 
+                    </p>
+                <% } %>
+                <label for="clave"> Ingrese una contraseña </label>
+                <input type="password" name="clave">
+                <% if (locals.errores && locals.errores.clave) { %>
+                    <p class="feedback">
+                        <%= locals.errores.clave.msg %> 
+                    </p>
+                <% } %>
+                <label for="confirmarClave"> Confirme su contraseña </label>
+                <input type="password" name="confirmarClave">
+                <% if (locals.errores && locals.errores.confirmarClave) { %>
+                    <p class="feedback">
+                        <%= locals.errores.confirmarClave.msg %> 
+                    </p>
+                <% } %>
+                <div class="botones">
+                    <button type="submit"> Crear </button>
+                    <button type="reset"> Borrar </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    
+</body>
+</html>

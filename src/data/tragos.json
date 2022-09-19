@@ -1,10 +1,11 @@
-[ {
-   "id": 1,
-   "nombre": "Gin Tonic",
-   "ingredientes": "(Gin Aconcagua, jugo de frutas, Agua Tónica)",
-   "categoria": "Clasico",
-   "precio": 600
-    },
+[
+  {
+    "id": 1,
+    "nombre": "Gin Tonic",
+    "ingredientes": "(Gin Aconcagua, jugo de frutas, Agua Tónica)",
+    "categoria": "Clasico",
+    "precio": 600
+  },
   {
     "id": 2,
     "nombre": "Fernet",
@@ -18,14 +19,14 @@
     "ingredientes": "(Gin Aconcagua, jugo de frutas, Agua Tónica)",
     "categoria": "clasico",
     "precio": 600
-    },
+  },
   {
     "id": 4,
     "nombre": "Vermouth Tonic",
     "ingredientes": "(Cinzano Rosso, jugo de limón, Agua tonica)",
     "categoria": "clasico",
     "precio": 600
-    },
+  },
   {
     "id": 5,
     "nombre": "Cynar",
@@ -180,6 +181,4 @@
     "categoria": "Sin Alcohol",
     "precio": 600
   }
-    
-
 ]

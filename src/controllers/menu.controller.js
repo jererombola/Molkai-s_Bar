@@ -1,4 +1,4 @@
-const {all,one,generate,write} = require('../models/menu.models');
+const {all,one,generate,write} = require('../models/menu.model');
 const controller = {
 
     index: (req,res) =>{

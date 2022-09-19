@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Usuario",
+    "apellido": "Tercero",
+    "email": "usuarioprimero@gmail.com",
+    "clave": "$2b$10$O7sYSg7KCx5m5Zdcc5bYMel4Xe8iZYpr/pfURw1Xeq3Vah2kjCYKO",
+    "categoria": "Cliente"
+  },
+  {
+    "id": 2,
+    "nombre": "Molokai",
+    "apellido": "Staff",
+    "email": "mstaff@molokai.com.ar",
+    "clave": "$2b$10$5vhq4GzE.2FX4FUP0vLlm.ZKyBdBrn1E.ytSM8yO5HU3Z7FpleDLq",
+    "categoria": "Administrador"
+  },
+  {
+    "id": 4,
+    "nombre": "Jeremías",
+    "apellido": "Rombolá",
+    "email": "j@hotmail.com",
+    "clave": "$2b$10$4WmM6vB1UCnpHrIWmtPSKOUyqDtHlwxpjwt/bULRVe26ICJjjOaW.",
+    "categoria": "Cliente"
+  }
+]

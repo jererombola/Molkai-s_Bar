@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/editar.css">
+    <title>Edita tu Producto</title>
+</head>
+<body>
+    
+    
+    <main>
+        <section>
+            <h1>Lista de usuarios</h1>
+            <% if (usuarios.length > 0) { %>
+            <ul class="contenedor-principal">
+                <% usuarios.forEach(element => { %>
+                    <li>
+                        <div class="tarjeta-usuario">
+                            <a href="/userProfile/<%= element.id %>">
+                              <span> <%= element.nombre %> <%= element.apellido %></span>
+                            </a>
+                            <p> <%= element.email %> </p>
+                            
+                        </div>
+                      </li>
+                <% }) %>
+                <% } %>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

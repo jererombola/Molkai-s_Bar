@@ -10,7 +10,14 @@
     <title>Lista</title>
     
     <h1>Menu de Edición</h1>
-
+    <% if (user) { %> 
+        <nav>
+            <ul>
+                <li> <a href="/userProfile/<%= user.id %> "> Bienvenido  <%=user.nombre%> <%=user.apellido%> </a> <a href="/logout"> <i class="fa-solid fa-door-open"></i> </a></li>
+                    
+            </ul>
+        </nav>
+        <% } %>
     <section>
         <h2>Tragos</h2> 
         <a href="/nuevo"><i class="fa-solid fa-plus"></i> </a>
