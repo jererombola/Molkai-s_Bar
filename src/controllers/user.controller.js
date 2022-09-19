@@ -31,7 +31,7 @@ const userController = {
         const result = validationResult(req)
         if(!result.isEmpty()) {
             let errores = result.mapped();
-            return res.render("../views/Users/register",{ 
+            return res.render("../views/register",{ 
                 errores: errores,
                 data: req.body
             })
@@ -67,17 +67,17 @@ const userController = {
         delete req.session.user
         res.cookie("user", null, {maxAge: -1})
         res.redirect("/login")
-    },
-    update: (req,res) => {
+    },  
+      update: (req,res) => {
         let todos = all();
-        let actualizados = todos.map(elemento => {
-            if(elemento.id == req.body.id){
-                elemento.nombre = req.body.nombre;
-                elemento.apellido = req.body.apellido
-                elemento.email = req.body.email
-                elemento.categoria = req.body.email.includes("@molokai") ? "Administrador" : "Cliente";
+        let actualizados = todos.map(user => {
+            if(user.id == req.body.id){
+                user.nombre = req.body.nombre;
+                user.apellido = req.body.apellido
+                user.email = req.body.email
+                user.categoria = req.body.email.includes("@molokai") ? "Administrador" : "Cliente";
             }
-            return elemento
+            return user
         })
         write(actualizados)
         return res.redirect("/usersList")

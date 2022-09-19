@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/edicion.css">
 
-    <title>Lista</title>
+    <title>Lista de Edición</title>
     
-    <h1>Menu de Edición</h1>
+    <h1> Menu de Edición</h1>
     <% if (user) { %> 
         <nav>
             <ul>
-                <li> <a href="/userProfile/<%= user.id %> "> Bienvenido  <%=user.nombre%> <%=user.apellido%> </a> <a href="/logout"> <i class="fa-solid fa-door-open"></i> </a></li>
-                    
+                <li> <a href="/userProfile/<%= user.id %> "> Bienvenido  <%=user.nombre%> <%=user.apellido%> </a></li>
+                  <li><a href="/logout"> <i class="fa-solid fa-door-open"></i> </a></li>  
             </ul>
         </nav>
         <% } %>

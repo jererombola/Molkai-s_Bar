@@ -8,10 +8,9 @@
   },
   {
     "id": 2,
-    "nombre": "Fernet",
-    "ingredientes": "(Fernet Branca, Coca-Cola/Pomelo)",
+    "nombre": "Molokai",
     "categoria": "clasico",
-    "precio": 350
+    "precio": null
   },
   {
     "id": 3,
