@@ -7,10 +7,10 @@ const {validationResult} = require("express-validator");
 const userController = {
     index: (req,res) => {
         let usuarios = all()
-        return res.render('UsuariosusersList',{usuarios})
+        return res.render('Usuarios/usersList',{usuarios})
     },
     register: (req,res) => {
-        return res.render("Usuariosregister")
+        return res.render("Usuarios/register")
         
     },
     login: (req,res) => {
@@ -75,7 +75,7 @@ const userController = {
                 elemento.nombre = req.body.nombre;
                 elemento.apellido = req.body.apellido
                 elemento.email = req.body.email
-                elemento.categoria = req.body.email.includes("@futbolxi") ? "Administrador" : "Cliente";
+                elemento.categoria = req.body.email.includes("@molokai") ? "Administrador" : "Cliente";
                 
             }
             return elemento

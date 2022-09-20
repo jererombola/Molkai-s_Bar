@@ -18,9 +18,9 @@ route.get("/userProfile/:id?",[isLogged],controller.show)
 
 route.get('/userEdit/:id?',controller.edit)
 
-route.put("/actualizar",[isLogged],[isAdm],controller.update)
+route.put("/updateUser",[isLogged],controller.update)
 
-route.delete("/borraruser",[isLogged], controller.remove)
+route.delete("/deleteUser",[isLogged], controller.remove)
 route.get('/logout',[isLogged], controller.logout)
 
 

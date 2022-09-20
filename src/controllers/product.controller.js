@@ -12,22 +12,23 @@ const controller = {
 
         return res.render('Productos/listaDeEdicion',{products})
     },
-     create: (req,res) => {
+    create: (req,res) => {
         return res.render("Productos/crearProducto")
     },
     
-  edit: (req,res) => {
+    edit: (req,res) => {
       let product = one(req.params.id)
       return res.render("Productos/editarProductos",{product})
   },
-  save: (req,res) => {
+    save: (req,res) => {
     let nuevo = generate(req.body)
     let todos = all()
     todos.push(nuevo)
     write(todos)
     return res.redirect("/MenuEdicionMolokai")
-},
-  update:(req,res)=>{ 
+  },
+    
+    update:(req,res)=>{ 
       let todos= all()
       let actualizados = todos.map(elemento => {
           if (elemento.id == req.body.id){
@@ -37,13 +38,14 @@ const controller = {
           }
           return elemento
       })
+     
       write(actualizados)
 
       return res.redirect("/MenuEdicionMolokai")
       },
 
       
-      remove:(req,res) =>{
+    remove:(req,res) =>{
           let product = one(req.body.id)
           
           let todos = all()

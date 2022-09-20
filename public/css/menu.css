@@ -17,11 +17,11 @@ body{
 picture{
     display: flex;
     justify-content: center;
+    
 }
 img{
     width: 79vw;
-    max-width: 43rem;
-
+    max-width: 43rem; 
 }
 h1 {
     margin: 1rem 0 ;
@@ -48,7 +48,7 @@ h3{
 
 h4{
     
-    margin: 1rem 1rem 1.2rem 1.2rem;
+    margin: 1rem 1.2rem 1.2rem 1.2rem;
     display: flex;
     justify-content: space-between;
     border-bottom: dotted;
