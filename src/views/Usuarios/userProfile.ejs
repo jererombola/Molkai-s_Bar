@@ -18,7 +18,7 @@
                     <h3> <span> Nombre:</span> <%= user.nombre %> <%= user.apellido %>  </h3>
                     <p class="info-usuario"> <span> Email:</span> <%= user.email %> </p>
                     <p class="info-usuario" id="categoria"> <span> Categoría:</span> <%= user.categoria  %> </p>
-                    <a href="/<%= user.id%>" class="boton">Editar Usuario</a>
+                    <a href="/userEdit/<%= user.id%>" class="boton">Editar Usuario</a>
                     <form action="/borraruser?m=DELETE" method="post">
                         <input type="hidden" name="id" value="<%= user.id %>">
                         <button type="submit" class="boton">Eliminar Usuario</button>

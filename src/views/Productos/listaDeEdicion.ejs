@@ -13,8 +13,8 @@
     <% if (user) { %> 
         <nav>
             <ul>
-                <li> <a href="/userProfile/<%= user.id %> "> Bienvenido  <%=user.nombre%> <%=user.apellido%> </a></li>
-                  <li><a href="/logout"> <i class="fa-solid fa-door-open"></i> </a></li>  
+                <li> <a href="/userProfile/<%= user.id %> "> Bienvenido  <%=user.nombre%> <%=user.apellido%> </a> <a href="/logout"> <i class="fa-solid fa-door-open"></i> </a></li>
+                    
             </ul>
         </nav>
         <% } %>

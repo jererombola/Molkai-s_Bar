@@ -7,31 +7,31 @@ const {validationResult} = require("express-validator");
 const userController = {
     index: (req,res) => {
         let usuarios = all()
-        return res.render('../views/usersList',{usuarios})
+        return res.render('UsuariosusersList',{usuarios})
     },
     register: (req,res) => {
-        return res.render("../views/register")
+        return res.render("Usuariosregister")
         
     },
     login: (req,res) => {
-        return res.render("../views/login")
+        return res.render("Usuarios/login")
     },
     show: (req,res) =>{
          let user = one(req.params.id)
          if(user){
-             return res.render('../views/userProfile',{user})     
+             return res.render('Usuarios/userProfile',{user})     
          }
     },
     edit: (req,res) => {
         let user = one(req.params.id)
-        return res.render("../views/userEdit", {user})  
+        return res.render("Usuarios/userEdit", {user})  
     },
     save: (req,res) => {
         // control de las validaciones 
         const result = validationResult(req)
         if(!result.isEmpty()) {
             let errores = result.mapped();
-            return res.render("../views/register",{ 
+            return res.render("Usuarios/register",{ 
                 errores: errores,
                 data: req.body
             })
@@ -47,7 +47,7 @@ const userController = {
         const result = validationResult(req)
         if(!result.isEmpty()) {
             let errores = result.mapped();
-            return res.render("../views/login",{
+            return res.render("Usuarios/login",{
                 errores: errores,
                 data: req.body
             })
@@ -68,16 +68,17 @@ const userController = {
         res.cookie("user", null, {maxAge: -1})
         res.redirect("/login")
     },  
-      update: (req,res) => {
+    update: (req,res) => {
         let todos = all();
-        let actualizados = todos.map(user => {
-            if(user.id == req.body.id){
-                user.nombre = req.body.nombre;
-                user.apellido = req.body.apellido
-                user.email = req.body.email
-                user.categoria = req.body.email.includes("@molokai") ? "Administrador" : "Cliente";
+        let actualizados = todos.map(elemento => {
+            if(elemento.id == req.body.id){
+                elemento.nombre = req.body.nombre;
+                elemento.apellido = req.body.apellido
+                elemento.email = req.body.email
+                elemento.categoria = req.body.email.includes("@futbolxi") ? "Administrador" : "Cliente";
+                
             }
-            return user
+            return elemento
         })
         write(actualizados)
         return res.redirect("/usersList")

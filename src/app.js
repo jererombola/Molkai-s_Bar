@@ -3,7 +3,7 @@ const methodOverride = require('method-override');
 const server = express();
 const {join} = require('path');
 const{port,start} = require("./modules/server")
-const session = require("cookie-session")
+const session = require("express-session")
 const cookie = require("cookie-parser")
 
 server.listen(port,start());
@@ -28,8 +28,10 @@ server.use(cookie())
 
 server.use(require("./middlewares/user"))
 
-const moloRoutes = require("./routes/menu.routes"); 
+const index = require("./routes/index.routes");
+const productRoutes = require("./routes/products.routes"); 
 const usersRoutes = require("./routes/users.routes")
 
-server.use(moloRoutes)
+server.use(index)
+server.use(productRoutes)
 server.use(usersRoutes)

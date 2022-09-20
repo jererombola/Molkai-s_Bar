@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="/css/register.css">
+    
     <title>Editar Usuario</title>
 </head>
 <body>
@@ -19,7 +20,9 @@
     <main>
         <section>
             <h1>Editar Usuario</h1>
-            <form action="/actualizar?m=PUT" method="post" class="formulario-registro" enctype="multipart/form-data">
+
+
+            <form action="/actualizar?m=PUT" method="post">
                 <input type="hidden" name="id" value="<%= user.id %>">
                 <input type="hidden" name="categoria" value="<%= user.categoria %>">
                 <label for="nombre"> Nombre </label>
@@ -32,9 +35,10 @@
                 <input type="password" name="clave" value="<%= user.clave %>" required>
                 <label for="confirmarClave"> Confirme su contraseña </label>
                 <input type="password" name="confirmarClave" value="<%= user.clave %>" required>
+             
                 <div>
-                    <button type="submit"> Editar </button>
-                    <button type="reset"> Borrar </button>
+                    <button type="submit" value="submit"> Editar </button>
+                    <button type="reset" value="reset"> Borrar </button>
                 </div>
             </form>
         </section>

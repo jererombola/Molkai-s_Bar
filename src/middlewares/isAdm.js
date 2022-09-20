@@ -1,7 +1,7 @@
 let middleware = (req,res,next) => {
     if (req.session.user.categoria == "Administrador") {
 
-        next()
+     return next()
     }
     
     res.redirect("/")

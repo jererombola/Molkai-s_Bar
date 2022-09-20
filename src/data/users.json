@@ -16,11 +16,11 @@
     "categoria": "Administrador"
   },
   {
-    "id": 4,
+    "id": 3,
     "nombre": "Jeremías",
     "apellido": "Rombolá",
-    "email": "j@hotmail.com",
-    "clave": "$2b$10$4WmM6vB1UCnpHrIWmtPSKOUyqDtHlwxpjwt/bULRVe26ICJjjOaW.",
-    "categoria": "Cliente"
+    "email": "mstaffs@molokai.com.ar",
+    "clave": "$2b$10$JpuRGvOqXEIl7iXEy3sqmOVESDfaVYkhVfOXP8IKaDMzDqWG5oMkG",
+    "categoria": "Administrador"
   }
 ]

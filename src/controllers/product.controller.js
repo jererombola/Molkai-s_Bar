@@ -1,4 +1,4 @@
-const {all,one,generate,write} = require('../models/menu.model');
+const {all,one,generate,write} = require('../models/products.model');
 const controller = {
 
     index: (req,res) =>{
@@ -7,28 +7,18 @@ const controller = {
 
         if(req.params.ids){
             products = products.filter(e => e.id == req.params.ids)
-            return res.render('molokai',{products})
+            return res.render('Productos/listaDeEdicion',{products})
         }
 
-        return res.render('molokai',{products})
-    }, create: (req,res) => {
-        return res.render("crear")
+        return res.render('Productos/listaDeEdicion',{products})
     },
-    edicion: (req,res) =>{
-
-        let products = all()
-
-        if(req.params.ids){
-            products = products.filter(e => e.id == req.params.ids)
-            return res.render('listaproductos',{products})
-        }
-
-        return res.render('listaproductos',{products})
+     create: (req,res) => {
+        return res.render("Productos/crearProducto")
     },
     
   edit: (req,res) => {
       let product = one(req.params.id)
-      return res.render("edita",{product})
+      return res.render("Productos/editarProductos",{product})
   },
   save: (req,res) => {
     let nuevo = generate(req.body)
@@ -47,8 +37,8 @@ const controller = {
           }
           return elemento
       })
-      
       write(actualizados)
+
       return res.redirect("/MenuEdicionMolokai")
       },
 
