@@ -7,18 +7,18 @@ const controller = {
 
         if(req.params.ids){
             products = products.filter(e => e.id == req.params.ids)
-            return res.render('Productos/listaDeEdicion',{products})
+            return res.render('Productos/editList',{products})
         }
 
-        return res.render('Productos/listaDeEdicion',{products})
+        return res.render('Productos/editList',{products})
     },
     create: (req,res) => {
-        return res.render("Productos/crearProducto")
+        return res.render("Productos/productCreate")
     },
     
     edit: (req,res) => {
       let product = one(req.params.id)
-      return res.render("Productos/editarProductos",{product})
+      return res.render("Productos/productEdit",{product})
   },
     save: (req,res) => {
     let nuevo = generate(req.body)
