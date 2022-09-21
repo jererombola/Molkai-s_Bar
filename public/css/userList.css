@@ -13,6 +13,7 @@ body{
     border-image: url("/img/Fondo.jpg") 200 round;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 12px;
+    
 }
 picture{
     display: flex;
@@ -30,18 +31,11 @@ h1 {
     text-align: center;
     font-size: 40px;
 }
-form{
-    display: block;
+ul{
     text-align: center;
-    align-items: center;
-    margin-top: 3rem;
 }
-form label{
-    display: block;
-}
-form input{
-    width: 70vw;
-    margin: 1rem;
+li{
+    margin: 3rem;
 }
 div{
     margin-bottom: 1rem;
@@ -51,4 +45,7 @@ a{
     font-size: 14px;
     color: black;
     
+}
+footer{
+    margin:2rem 
 }

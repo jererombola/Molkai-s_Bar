@@ -8,9 +8,10 @@
   },
   {
     "id": 2,
-    "nombre": "Molokaiss",
+    "nombre": "Fernet",
+    "ingredientes": "(Fernet Branca, Coca-Cola/Pomelo)",
     "categoria": "clasico",
-    "precio": null
+    "precio": 600
   },
   {
     "id": 3,

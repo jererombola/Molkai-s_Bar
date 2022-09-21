@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/editar.css">
+    <link rel="stylesheet" href="/css/editProduct.css">
     <title>Edita tu Producto</title>
 </head>
 <body>
     
     
-    <form action="/actualizar?m=PUT" method="post">
+    <form action="/productUpdate?m=PUT" method="post">
 
         <input type="hidden" name="id" value="<%= product.id %>">
       
@@ -42,6 +42,6 @@
     </form>
     
   
-    <a href="/MenuEdicionMolokai/"> Volver</a>
+    <a href="/menuEdit/"> Volver</a>
 </body>
 </html>

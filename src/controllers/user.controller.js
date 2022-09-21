@@ -24,7 +24,7 @@ const userController = {
     },
     edit: (req,res) => {
         let user = one(req.params.id)
-        return res.render("Usuarios/userEdit", {user})  
+        return res.render("Usuarios/userEdit",{user})  
     },
     save: (req,res) => {
         // control de las validaciones 
@@ -60,7 +60,7 @@ const userController = {
         let todos = all()
         req.session.user = todos.find(user => user.email == req.body.email)
        
-        return res.redirect("/MenuEdicionMolokai")
+        return res.redirect("/menuEdit")
 
     },
     logout : (req,res) => {
@@ -81,7 +81,7 @@ const userController = {
             return elemento
         })
         write(actualizados)
-        return res.redirect("/usersList")
+        return res.redirect("/menuEdit")
     },
     remove : (req,res) => {
         let user = one(req.body.id)

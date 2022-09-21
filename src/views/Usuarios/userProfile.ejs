@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/editar.css">
-    <title>Perfil de <% user.nombre + "" + user.apellido %>  %> </title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <title>Perfil de <%= user.nombre + "" + user.apellido %> </title>
 </head>
 <body>
     <header>
@@ -16,14 +16,15 @@
                 <h1> Detalle de Usuario <%= user.id %> </h1>
                 <article>
                     <h3> <span> Nombre:</span> <%= user.nombre %> <%= user.apellido %>  </h3>
-                    <p class="info-usuario"> <span> Email:</span> <%= user.email %> </p>
-                    <p class="info-usuario" id="categoria"> <span> Categoría:</span> <%= user.categoria  %> </p>
-                    <a href="/userEdit/<%= user.id%>" class="boton">Editar Usuario</a>
+                    <p> <span> Email:</span> <%= user.email %> </p>
+                    <p> <span> Categoría:</span> <%= user.categoria  %> </p>
+                    <a id="editar" href="/userEdit/<%= user.id %> " >Editar Usuario</a>
                     <form action="/borraruser?m=DELETE" method="post">
                         <input type="hidden" name="id" value="<%= user.id %>">
                         <button type="submit" class="boton">Eliminar Usuario</button>
                     </form>
                 </article>
+                <a id="volver" href="/menuEdit/"> Volver</a>
             </section>
     </main>
   

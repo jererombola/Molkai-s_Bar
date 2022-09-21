@@ -19,7 +19,7 @@
     </header>
     <main>
         <section>
-            <h1>Editar Usuario</h1>
+            <h1>Editar Usuario <%= user.nombre %> </h1>
 
 
             <form action="/updateUser?m=PUT" method="post">
@@ -41,6 +41,7 @@
                     <button type="reset" value="reset"> Borrar </button>
                 </div>
             </form>
+            <a href="/userProfile/<%= user.id %> "> Volver</a>
         </section>
     </main>
     

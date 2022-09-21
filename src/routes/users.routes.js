@@ -13,14 +13,14 @@ route.post("/access", validatorLogin ,controller.access)
 route.get("/register",controller.register)
 route.post("/register/save", validaciones,controller.save)
 
-route.get("/usersList",controller.index)
+route.get("/usersList",[isLogged],controller.index)
 route.get("/userProfile/:id?",[isLogged],controller.show)
 
-route.get('/userEdit/:id?',controller.edit)
+route.get('/userEdit/:id?',[isLogged],controller.edit)
 
 route.put("/updateUser",[isLogged],controller.update)
 
-route.delete("/deleteUser",[isLogged], controller.remove)
+route.delete("/deleteUser",[isLogged],{isAdm}, controller.remove)
 route.get('/logout',[isLogged], controller.logout)
 
 

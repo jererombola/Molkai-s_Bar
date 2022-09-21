@@ -25,7 +25,7 @@ const controller = {
     let todos = all()
     todos.push(nuevo)
     write(todos)
-    return res.redirect("/MenuEdicionMolokai")
+    return res.redirect("/menuEdit")
   },
     
     update:(req,res)=>{ 
@@ -41,7 +41,7 @@ const controller = {
      
       write(actualizados)
 
-      return res.redirect("/MenuEdicionMolokai")
+      return res.redirect("/menuEdit")
       },
 
       
@@ -51,7 +51,7 @@ const controller = {
           let todos = all()
           let noEliminados = todos.filter(elemento => elemento.id != req.body.id)
           write(noEliminados)
-          return res.redirect("/MenuEdicionMolokai")
+          return res.redirect("/menuEdit")
 
       }
 }

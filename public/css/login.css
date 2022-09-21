@@ -34,10 +34,17 @@ form{
     display: block;
     text-align: center;
     align-items: center;
+    margin-top: 4rem;
 }
 form label{
     display: block;
 }
 form input{
     width: 70vw;
+    margin: 1rem;
+}
+
+p{  
+    text-align: center;
+    margin: 4rem 0;
 }

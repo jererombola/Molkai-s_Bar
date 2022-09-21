@@ -28,27 +28,41 @@ h1 {
     margin: 1rem 0 ;
     font-family: 'Caveat', cursive;
     text-align: center;
-    font-size: 40px;
-}
-form{
-    display: block;
-    text-align: center;
-    align-items: center;
-    margin-top: 3rem;
-}
-form label{
-    display: block;
-}
-form input{
-    width: 70vw;
-    margin: 1rem;
-}
-div{
-    margin-bottom: 1rem;
+    font-size: 30px;
 }
 
-a{
+section{
+    margin-bottom: 3rem;
+}
+article{
+    text-align: center;
+    margin: 1rem;
+}
+
+p{ 
+    margin:2rem 0;
+}
+
+#editar{
     font-size: 14px;
     color: black;
+    text-decoration: underline;  
+}
+
+form{
+    margin-top: 1rem;
+    
+}
+button{
+    
+    margin-top: 2rem;   
+    
+}
+#volver{
+    display: block;
+    margin-top: 5rem;
+    font-size: 14px;
+    color: black;
+    text-decoration: underline;
     
 }
