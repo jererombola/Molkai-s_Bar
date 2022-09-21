@@ -20,7 +20,7 @@ route.get('/userEdit/:id?',[isLogged],controller.edit)
 
 route.put("/updateUser",[isLogged],controller.update)
 
-route.delete("/deleteUser",[isLogged],{isAdm}, controller.remove)
+route.delete("/deleteUser",[isLogged],[isAdm], controller.remove)
 route.get('/logout',[isLogged], controller.logout)
 
 
