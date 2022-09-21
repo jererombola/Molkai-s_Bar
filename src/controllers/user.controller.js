@@ -19,19 +19,19 @@ const userController = {
     show: (req,res) =>{
          let user = one(req.params.id)
          if(user){
-             return res.render('Usuarios/userProfile',{user})     
+             return res.render('Users/userProfile',{user})     
          }
     },
     edit: (req,res) => {
         let user = one(req.params.id)
-        return res.render("Usuarios/userEdit",{user})  
+        return res.render("Users/userEdit",{user})  
     },
     save: (req,res) => {
         // control de las validaciones 
         const result = validationResult(req)
         if(!result.isEmpty()) {
             let errores = result.mapped();
-            return res.render("Usuarios/register",{ 
+            return res.render("Users/register",{ 
                 errores: errores,
                 data: req.body
             })
@@ -47,7 +47,7 @@ const userController = {
         const result = validationResult(req)
         if(!result.isEmpty()) {
             let errores = result.mapped();
-            return res.render("Usuarios/login",{
+            return res.render("Users/login",{
                 errores: errores,
                 data: req.body
             })
